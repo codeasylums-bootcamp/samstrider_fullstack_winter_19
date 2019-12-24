@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images.ico" />
+    <title>Evento</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    
+    <style>
+      .form-modal {
+        border-radius: 20px;
+        border: 1px solid;
+      }
+      header {
+        position: fixed;
+        width: 100%;
+        z-index: 200;
+      }
+      .nav-item {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+      .nav-item:hover {
+        background-color: black;
+        border-radius: 8px;
+      }
+      .navbar-brand {
+        font-family: inherit;
+        font-weight: 700;
+      }
+      .dis-err p{
+        font-size: medium;
+      }
+      .top-wrapper {
+        padding-top: 180px;
+        padding-bottom: 100px;
+        color: rgb(17, 12, 12);
+        font-weight: bold;
+        background-image: url(index_bg.jpg);
+        background-size: cover;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .top-wrapper h1 {
+        font-size: 45px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      .top-text {
+        background-color: gainsboro;
+        font-weight: bold;
+        opacity: 0.8;
+      }
+      .member-data-wrapper{
+        display: flex;
+      }
+      .event-wrapper {
+        margin: 0 auto;
+        padding: 30px 30px;
+      }
+      .event-wrapper p{
+        font-size: larger;
+        font-weight: 800;
+        color: #fff;
+      }
+      .events {
+        padding: 5px 10px;
+        background: url('events_bg.jpeg');
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body onload="userDat(event)">
+
+    <header class="header_ bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-center" href="index.html">
+          <img
+            src="images.ico"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Evento"
+          />
+          EVENTO
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link font-weight-bold" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item nav-right">
+              <a class="nav-link" href="login-signup.html">Login/Sign-up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>
+          <span class=" top-text p-2 mb-2 text-dark">EVENTO</span>
+        </h1>
+        <h3>
+          &nbsp
+          <span class=" top-text p-2 mb-1 text-dark"
+            >Let's see what's happening....</span
+          >
+        </h3>
+      </div>
+    </div>  
+    
+    <div class="events" id="events-id">
+      <div class="heading text-center mt-5">
+        <h2>TRENDING EVENTS</h2>
+      </div>
+      <div class="event-wrapper row">
+        <div class="event col-md-4">
+          <p>GDG Cloud, Chennai</p>
+          <br />
+          <p>9:00 am; 28 Dec 2019</p>
+          <br />
+          <p>Hilton, Chennai</p>
+        </div>
+        <div class="event col-md-4">
+          <p>AWS Group, Chennai</p>
+          <br />
+          <p>10:00 am; 30 Dec 2019</p>
+          <br />
+          <p>ITC Grand Chola, Chennai</p>
+        </div>
+        <div class="event col-md-4">
+          <p>GDG Cloud, Chennai</p>
+          <br />
+          <p>11:00 am; 02 Jan 2020</p>
+          <br />
+          <p>Hilton, Chennai</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="member-data-wrapper container mt-3" id="mem-id">
+     <div class="left-wrapper">
+      <img src="" id="qr-img"/>
+     </div>
+     <div class="right-wrapper ml-5">
+      <div class="data-item" id = "name"></div>
+      <div class="data-item" id = "email"></div>
+      <div class="data-item" id = "linkedin"></div>
+      <div class="data-item" id = "phone"></div>
+     </div>
+  </div>
+   
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="userdata.js"></script>
+</html>

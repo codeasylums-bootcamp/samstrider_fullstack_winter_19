@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images.ico" />
+    <title>Evento</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/iconic/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animsition/css/animsition.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/daterangepicker/daterangepicker.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <style>
+      header {
+        position: fixed;
+        width: 100%;
+        z-index: 200;
+      }
+      .nav-item {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+      .nav-item:hover {
+        background-color: black;
+        border-radius: 8px;
+      }
+      .navbar-brand {
+        font-family: inherit;
+        font-weight: 700;
+      }
+      .container {
+        width: 100%;
+      }
+      .top-wrapper {
+        padding-top: 180px;
+        padding-bottom: 100px;
+        color: rgb(17, 12, 12);
+        font-weight: bold;
+        background-image: url(index_bg.jpg);
+        background-size: cover;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .top-wrapper h1 {
+        font-size: 45px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      .top-text {
+        background-color: gainsboro;
+        font-weight: bold;
+        opacity: 0.8;
+      }
+      .img-content {
+        width: 100%;
+      }
+      .item p {
+        text-align: center;
+        font-weight: 800;
+        font-size: x-large;
+      }
+      .item {
+        transition: 0.5s ease;
+        cursor: pointer;
+      }
+      .item:hover {
+        transform: scale(1.15);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+      }
+      /* .about-wrapper {
+        display: flex;
+      } */
+      .heading h2 {
+        font-weight: 800;
+      }
+      .right-abt p {
+        font-weight: 700;
+        font-size: large;
+      }
+      .express-thoughts {
+        background-color: rgb(199, 199, 214);
+        margin-bottom: 20px;
+        padding: 20px 20px;
+      }
+      .form-control {
+        border-radius: 10px;
+        border: 2px solid;
+      }
+      .list-post-item {
+        background: linear-gradient(45deg, #f3dcfb, #679fe4);
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      .event-wrapper {
+        margin: 0 auto;
+        padding: 30px 30px;
+      }
+      .event-wrapper p{
+        font-size: larger;
+        font-weight: 800;
+        color: #fff;
+      }
+      .events {
+        padding: 5px 10px;
+        background: url('events_bg.jpeg');
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header_ bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-center" href="index.html">
+          <img
+            src="images.ico"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="Evento"
+          />
+          EVENTO
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link font-weight-bold" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item nav-right">
+              <a class="nav-link" href="login-signup.html">Login/Sign-up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>
+          <span class=" top-text p-2 mb-2 text-dark">EVENTO</span>
+        </h1>
+        <h3>
+          &nbsp
+          <span class=" top-text p-2 mb-1 text-dark"
+            >Let's see what's happening.....</span
+          >
+        </h3>
+      </div>
+    </div>
+
+    <div class="content-wrapper row mt-2 mr-2 mb-2 ml-2">
+      <a class="content-item col-md-3 col-sm-6" href="#abt-us-id">
+        <div class="item">
+          <img class="img-content" src="who_are_we.jpeg" alt="" />
+          <p>Who are we??</p>
+        </div>
+      </a>
+      <a class="content-item col-md-3 col-sm-6" href="#events-id">
+        <div class="item">
+          <img class="img-content" src="event_content.jpg" alt="" />
+          <p>Events</p>
+        </div>
+      </a>
+      <a class="content-item col-md-3 col-sm-6" href="#" id="plan-evt-id">
+        <div class="item">
+          <img class="img-content" src="plan_event.jpg" alt="" />
+          <p>Plan your Event!!</p>
+        </div>
+      </a>
+      <a class="content-item col-md-3 col-sm-6" href="#express-id">
+        <div class="item">
+          <img class="img-content" src="editorial_content.jpg" alt="" />
+          <p>Editorial</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="about-us mt-1 mb-2" id="abt-us-id">
+      <div class="about-wrapper row">
+        <div class="left-abt col-md-6 col-sm-12">
+          <img src="about-us-img.jpg" alt="" />
+        </div>
+        <div class="right-abt text-center col-md-6 col-sm-12">
+          <div class="heading text-center mt-5">
+            <h2>WHO ARE WE??</h2>
+          </div>
+          <p>
+            <br /><br />
+            Evento is a platform where you KNOW, RESEARCH and EXPLORE about your
+            surroundings.. Be it their Email address or 'Date of birth'. EVENTO
+            gives you the minute details of your peer member.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="events" id="events-id">
+      <div class="heading text-center mt-5">
+        <h2>TRENDING EVENTS</h2>
+      </div>
+      <div class="event-wrapper row">
+        <div class="event col-md-4">
+          <p>GDG Cloud, Chennai</p>
+          <br />
+          <p>9:00 am; 28 Dec 2019</p>
+          <br />
+          <p>Hilton, Chennai</p>
+        </div>
+        <div class="event col-md-4">
+          <p>AWS Group, Chennai</p>
+          <br />
+          <p>10:00 am; 30 Dec 2019</p>
+          <br />
+          <p>ITC Grand Chola, Chennai</p>
+        </div>
+        <div class="event col-md-4">
+          <p>GDG Cloud, Chennai</p>
+          <br />
+          <p>11:00 am; 02 Jan 2020</p>
+          <br />
+          <p>Hilton, Chennai</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container express-thoughts mt-5" id="express-id">
+      <div class="heading">
+        <h2 class="express-heading text-center mt-3 mb-3 mr-3 ml-3">
+          EDITORIAL
+        </h2>
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control post-input"
+          placeholder="What's on your mind???"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="post-button"
+          >
+            <strong>POST</strong>
+          </button>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush"></ul>
+    </div>
+  </body>
+  <script src="post_blog.js"></script>
+  <script src="main.js"></script>
+  <script src="plan.js"></script>
+</html>
